@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="STUDENT_DATABASEPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>com.student.entities.Behaviour</class>
+    <class>com.student.entities.Subject</class>
+    <class>com.student.entities.Timetable</class>
+    <class>com.student.entities.Attendance</class>
+    <class>com.student.entities.Gender</class>
+    <class>com.student.entities.Excercises</class>
+    <class>com.student.entities.FinalExam</class>
+    <class>com.student.entities.StudentsData</class>
+    <class>com.student.entities.Teacher</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:8889/SH_DATABASE?zeroDateTimeBehavior=convertToNull"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.password" value="root"/>
+    </properties>
+  </persistence-unit>
+</persistence>
